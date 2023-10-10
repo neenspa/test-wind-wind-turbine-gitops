@@ -1,0 +1,15 @@
+app:
+  name: test-wind-wind-turbine-app
+  namespace: test-wind
+  cluster: .apps.democp.vega.local
+
+git:
+  branch: main
+  repo: https://github.com/neenspa/test-wind-wind-turbine
+  org: neenspa
+  name: test-wind-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: test-wind/wind-turbine-app
+  tag: latest
